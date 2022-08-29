@@ -1,0 +1,87 @@
+<html lang='pt'>
+<head>
+    <meta charset='UTF-8'>
+    <title> Murilo Gheller Franceschetto </title>
+    <link rel='stylesheet' href='./css/app.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;400;600;800;900&display=swap' rel='stylesheet'>
+    <script src='./js/app.js'></script>
+</head>
+<body>
+<menu #menu>
+    <a href='#perfil'>
+        <button class='btn-link'>Início</button>
+    </a>
+    <div>
+        <a href="#skills">
+            <button class='btn-link'>Skill's</button>
+        </a>
+        <a href='#contato'>
+            <button class='btn-link'>Contato</button>
+        </a>
+    </div>
+</menu>
+
+<div id='perfil' class='section'>
+    <img class='background-city' alt='Cidade' src='img/602b5ce90a2838549dcc632e.jpg'>
+    <div class='profile w-100 fill-content align-center'>
+        <img alt='Foto do perfil' src='img/eu.jpg' class='foto'>
+        <h1 class='text-center'>Murilo Franceschetto</h1>
+        <h3 class='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget rutrum diam, at
+            semper ante. Nullam a rutrum nibh. Duis ultrices tellus in blandit tincidunt. Morbi eget elementum
+            ante.</h3>
+    </div>
+</div>
+
+<div id='skills' class='section'>
+    <div class='fill-content align-center'>
+        <div class='form-width'>
+            <h2>Skill´s</h2>
+
+            <label for='js'>Javascript</label>
+            <input style="width: 100%" type="range" id="js" name="js" min="0" max="100" value='70' disabled >
+
+            <label for='html'>HTML</label>
+            <input style="width: 100%" type="range" id="html" name="html" min="0" max="100" value='50' disabled >
+
+            <label for='css'>CSS</label>
+            <input style="width: 100%" type="range" id="css" name="css" min="0" max="100" value='80' disabled >
+
+        </div>
+    </div>
+</div>
+
+<div id='contato' class='section'>
+    <div class='fill-content align-center'>
+        <div class='form-width'>
+            <h2>Contato</h2>
+            <h3>Entre em contato comigo através o formulário abaixo:</h3>
+
+            <form class="align-space-between" action="https://formspree.io/f/xoqbvrwe" method="POST">
+                <div class='field'>
+                    <label for='nome'>Nome</label>
+                    <input type='text' id='nome' placeholder='Fulano de Tal' name="nome" required/>
+                </div>
+                <div class='field'>
+                    <label for='email'>E-mail</label>
+                    <input type='text' id='email' placeholder='fulanodetal@email.com' name="email" required/>
+                </div>
+                <div class='field'>
+                    <label for='fone'>Telefone</label>
+                    <input type='text' id='fone' placeholder='+99 99 9999-99999' name="fone"/>
+                </div>
+
+                <label for='msg'>Mensagem</label>
+                <textarea id='msg' placeholder='Gostaria de conversar contigo sobre...' name="message" required></textarea>
+
+                <div class='btn-submit'>
+                    <button type="submit">Enviar mensagem</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

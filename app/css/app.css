@@ -1,0 +1,156 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Google Sans", sans-serif;
+    background: #313131;
+    color: white;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+menu {
+    width: -webkit-fill-available;
+    padding: 0 16px;
+    z-index: 10;
+    position: fixed;
+    height: 50px;
+    max-height: 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.btn-link {
+    border: none;
+    background: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 0 10px;
+    transition: .3s;
+    font-weight: bold;
+}
+.section {
+    height: 100vh;
+    position: relative;
+}
+
+.fill-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.align-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#perfil .background-city {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.5);
+}
+#perfil h3 {
+    max-width: 50%;
+}
+#perfil .profile {
+    z-index: 2;
+    flex-direction: column;
+}
+#perfil .foto {
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    width: 150px;
+    padding: 5px;
+}
+
+#skills input {
+    margin-bottom: 16px;
+}
+
+.form-width {
+    width: 60%;
+}
+@media only screen and (max-width: 600px) {
+    #contato .form-width {
+        width: 90%;
+    }
+    .field {
+        width: 100% !important;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    #contato .form-width {
+        width: 80%;
+    }
+}
+
+.field {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.field input {
+    height: 28px;
+}
+
+label {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: .8em;
+}
+textarea {
+    height: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+input, textarea {
+    padding: 5px;
+    background: #131313;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-submit {
+    display: flex; justify-content: flex-end; width: 100%;
+}
+.btn-submit button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid gray;
+    color: gray;
+    cursor: pointer;
+    transition: 200ms;
+}
+.btn-submit button:hover {
+    transition: 200ms;
+    background: rgba(255, 255, 255, 0.14);
+}
